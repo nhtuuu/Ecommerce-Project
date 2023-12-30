@@ -10,5 +10,30 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Gordita, sans-serif;
+  font-family: "Gordita", sans-serif !important;
+  color: var(--text-color) !important;
+  background: var(--body-bg);
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+.icon {
+  filter: var(--icon-color);
 }

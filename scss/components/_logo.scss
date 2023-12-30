@@ -1,0 +1,32 @@
+@use "../abstracts";
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  @include abstracts.screen(lg) {
+    gap: 10px;
+    margin-left: 40px;
+  }
+
+  @include abstracts.screen(md) {
+    margin-left: 0;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.45;
+
+    @include abstracts.screen(lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__img {
+    @include abstracts.screen(lg) {
+      width: 24px;
+    }
+  }
+}

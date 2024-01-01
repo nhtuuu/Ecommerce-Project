@@ -1,26 +1,30 @@
 @use "../abstracts";
 
 html.dark {
-  --text-color: #ffffff;
-  --icon-color: brightness(0) saturate(100%) invert(99%) sepia(6%)
-    saturate(1204%) hue-rotate(241deg) brightness(121%) contrast(100%);
+    --text-color: #fff;
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%)
+        contrast(99%);
 
-  --body-bg: #292e39;
-  --header-bg: #171c28;
-  --top-cta-group-bg: #292e39;
-  --top-cta-group-shadow: rgba(0, 0, 0, 0.2);
-  --top-cta-group-seperate: #ededf6;
+    --body-bg: #292e39;
+    --header-bg-color: #171c28;
+    --top-act-group-bg-color: #292e39;
+    --top-act-group-shadow: rgba(0, 0, 0, 0.2);
+    --top-act-group-separate: #ededf6;
 
-  @include abstracts.screen(lg) {
-    --header-shadow-color: rgba(0, 0, 0, 0.2);
-  }
+    @include abstracts.breakpoint(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.2);
+    }
 
-  // Dropdown
-  --dropdown-bg: #2f3441;
-  --dropdown-shadow: rgba(23, 28, 40, 0.4);
-  --dropdown-arrow-color: brightness(0) saturate(100%) invert(20%) sepia(14%)
-    saturate(806%) hue-rotate(185deg) brightness(86%) contrast(92%);
-  --top-menu-border-color: #171c28;
-  --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(8%)
-    saturate(1986%) hue-rotate(180deg) brightness(100%) contrast(97%);
+    // Dropdown
+    --dropdown-bg-color: #2f3441;
+    --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(17%) sepia(27%) saturate(487%) hue-rotate(185deg)
+        brightness(89%) contrast(88%);
+    --top-menu-border-color: #171c28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(95%) sepia(6%) saturate(527%) hue-rotate(180deg)
+        brightness(107%) contrast(96%);
+
+    // Sidebar
+    --sidebar-bg: #292e39;
+    --sidebar-shadow: rgba(23, 28, 40, 0.4);
 }

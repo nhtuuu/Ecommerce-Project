@@ -1437,6 +1437,7 @@ html {
     flex-direction: column;
     align-items: flex-start;
     overflow-y: auto;
+    overscroll-behavior: contain;
     height: calc(100% - 40px);
   }
 }
@@ -1639,10 +1640,17 @@ html {
     content: none;
   }
 }
+@media (max-width: 991.98px) {
+  .dropdown__inner {
+    padding: 0 20px;
+  }
+}
 
 .top-menu {
   --main-column-width: 292px;
-  --max-inner-height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+  --max-inner-height: calc(
+    min(582px, 100vh - 158px) - var(--inner-padding) * 2
+  );
   position: relative;
 }
 .top-menu__main {

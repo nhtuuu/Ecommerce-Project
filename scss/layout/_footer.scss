@@ -64,15 +64,24 @@
       @include abstracts.screen(lg) {
         width: 40%;
       }
+
+      @include abstracts.screen(lg) {
+        width: 50%;
+        font-size: 16px;
+      }
+
+      @include abstracts.screen(lg) {
+        flex: 1;
+      }
     }
 
     &-link {
       padding: 8px 0;
     }
+  }
 
-    &-info:not(:first-of-type) {
-      margin-top: 20px;
-    }
+  &-info:not(:first-of-type) {
+    margin-top: 20px;
   }
 
   &__bottom {
@@ -80,6 +89,11 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+
+    @include abstracts.screen(md) {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
   }
 
   &__socials {
@@ -115,6 +129,11 @@
 
       &--linkedin {
         background: #2f71ab;
+      }
+
+      &:hover {
+        filter: grayscale(0);
+        translate: 0 -3px;
       }
     }
 
